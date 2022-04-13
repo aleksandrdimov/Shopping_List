@@ -1,4 +1,6 @@
 body {
+  background: #fafafa;
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +12,94 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  outline: 0;
+  outline-offset: 0;
+}
+
+li{
+  background: #ffffff;
+  border: 1px solid #97978e;
+}
+
+li:hover {
+  border:1px solid #258031;
+  animation: scale 1.5s forwards ease;
+}
+
+.wrapper {
+  padding: 5rem 10px 10px 10px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.title {
+  text-align: center;
+  color: #258031;
+  font-size: 42px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.rm {
+  background: transparent;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+}
+
+.rm:hover .path{
+  animation: hover .8s forwards ease;
+  fill: #aa0404;
+}
+
+.rm:hover .path_two{
+  fill: #aa0404;
+}
+
+.bg{
+  background-color: #e2e0e0;
+  border: 1px solid #97978e;
+  text-align: center;
+}
+
+.bg:hover {
+  border: 1px solid #258031;
+}
+
+.add {
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  padding: 8px 16px 8px 16px;
+  background-color: #258031;
+  color: white;
+}
+
+.add:hover {
+  background-color: rgb(30, 112, 41);
+}
+
+.input{
+  border: 1px solid #97978e;
+  border-radius: 15px 0px 0px 15px;
+  padding: 7px 7px 7px 7px;
+  margin-right:5px;
+}
+
+.input:hover {
+  border: 1px solid #258031;
+}
+
+.input:focus{
+  border: 1px solid #258031;
+}
+
+@keyframes hover {
+  to {
+    transform: rotate(-15deg);
+  }
 }
